@@ -1,0 +1,45 @@
+export default defineNuxtConfig({
+  compatibilityDate: '2025-07-15',
+  devtools: { enabled: true },
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    '@pinia/nuxt',
+    '@nuxtjs/sitemap',
+    '@nuxt/eslint',
+  ],
+  css: ['~/assets/css/main.css'],
+  typescript: {
+    strict: true,
+  },
+  runtimeConfig: {
+    siteUrl: '',
+    public: {
+      siteName: 'Voltix Store',
+      siteUrl: process.env.NUXT_SITE_URL || '',
+    },
+  },
+  site: {
+    name: 'Voltix Store',
+    url: process.env.NUXT_SITE_URL || 'https://voltix-store.example',
+  },
+  app: {
+    head: {
+      htmlAttrs: { lang: 'en' },
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' },
+      ],
+      title: 'Voltix Store | Premium Electronics',
+      titleTemplate: '%s · Voltix Store',
+      meta: [
+        {
+          name: 'description',
+          content: 'Discover premium electronics and accessories at Voltix Store.',
+        },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      ],
+    },
+  },
+})

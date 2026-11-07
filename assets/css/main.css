@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /* Native controls have a stable baseline; dark fields opt in explicitly. */
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-background font-sans text-body text-text-primary antialiased;
+  }
+
+  h1 { @apply text-heading-1; }
+  h2 { @apply text-heading-2; }
+  h3 { @apply text-heading-3; }
+  h4, h5, h6 { @apply text-heading-4; }
+  label { @apply text-label; }
+  button { @apply text-button; }
+  small { @apply text-description; }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-primary;
+  }
+}

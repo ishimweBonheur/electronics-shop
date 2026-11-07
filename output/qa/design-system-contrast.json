@@ -1,0 +1,128 @@
+[
+  {
+    "variant": "primary",
+    "size": "small",
+    "contrast": 4.104,
+    "fontSize": 19
+  },
+  {
+    "variant": "primary",
+    "size": "medium",
+    "contrast": 4.104,
+    "fontSize": 19
+  },
+  {
+    "variant": "primary",
+    "size": "large",
+    "contrast": 4.104,
+    "fontSize": 20
+  },
+  {
+    "variant": "secondary",
+    "size": "small",
+    "contrast": 17.74,
+    "fontSize": 19
+  },
+  {
+    "variant": "secondary",
+    "size": "medium",
+    "contrast": 17.74,
+    "fontSize": 19
+  },
+  {
+    "variant": "secondary",
+    "size": "large",
+    "contrast": 17.74,
+    "fontSize": 20
+  },
+  {
+    "variant": "outline",
+    "size": "small",
+    "contrast": 19.92,
+    "fontSize": 19
+  },
+  {
+    "variant": "outline",
+    "size": "medium",
+    "contrast": 19.92,
+    "fontSize": 19
+  },
+  {
+    "variant": "outline",
+    "size": "large",
+    "contrast": 19.92,
+    "fontSize": 20
+  },
+  {
+    "variant": "dark-outline",
+    "size": "small",
+    "contrast": 19.92,
+    "fontSize": 19
+  },
+  {
+    "variant": "dark-outline",
+    "size": "medium",
+    "contrast": 19.92,
+    "fontSize": 19
+  },
+  {
+    "variant": "dark-outline",
+    "size": "large",
+    "contrast": 19.92,
+    "fontSize": 20
+  },
+  {
+    "variant": "light-outline",
+    "size": "small",
+    "contrast": 17.74,
+    "fontSize": 19
+  },
+  {
+    "variant": "light-outline",
+    "size": "medium",
+    "contrast": 17.74,
+    "fontSize": 19
+  },
+  {
+    "variant": "light-outline",
+    "size": "large",
+    "contrast": 17.74,
+    "fontSize": 20
+  },
+  {
+    "variant": "ghost",
+    "size": "small",
+    "contrast": 17.74,
+    "fontSize": 19
+  },
+  {
+    "variant": "ghost",
+    "size": "medium",
+    "contrast": 17.74,
+    "fontSize": 19
+  },
+  {
+    "variant": "ghost",
+    "size": "large",
+    "contrast": 17.74,
+    "fontSize": 20
+  },
+  {
+    "variant": "danger",
+    "size": "small",
+    "contrast": 4.829,
+    "fontSize": 19
+  },
+  {
+    "variant": "danger",
+    "size": "medium",
+    "contrast": 4.829,
+    "fontSize": 19
+  },
+  {
+    "variant": "danger",
+    "size": "large",
+    "contrast": 4.829,
+    "fontSize": 20
+  }
+]

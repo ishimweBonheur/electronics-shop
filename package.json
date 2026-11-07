@@ -1,0 +1,37 @@
+{
+  "name": "voltix-store",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@nuxt/image": "2.2.1",
+    "@nuxtjs/sitemap": "8.6.2",
+    "@pinia/nuxt": "0.11.2",
+    "h3": "1.15.11",
+    "nuxt": "3.21.11",
+    "pinia": "3.0.3",
+    "vue": "3.5.40",
+    "vue-router": "4.6.4"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "1.17.0",
+    "@nuxtjs/tailwindcss": "6.14.0",
+    "@types/node": "24.19.2",
+    "eslint": "10.14.0",
+    "typescript": "5.9.3",
+    "vue-tsc": "3.2.4"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

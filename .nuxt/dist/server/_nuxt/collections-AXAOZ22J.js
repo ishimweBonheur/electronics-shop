@@ -1,0 +1,12 @@
+const collections = [
+  { name: "Audio", slug: "audio", image: "audio" },
+  { name: "Smart Wearables", slug: "wearables", image: "wearables" },
+  { name: "Mobile Accessories", slug: "mobile", image: "mobile" },
+  { name: "Gaming", slug: "gaming", image: "gaming" },
+  { name: "Smart Home", slug: "smart-home", image: "smart-home" },
+  { name: "Drones & Cameras", slug: "drones-cameras", image: "drones" }
+];
+export {
+  collections as c
+};
+//# sourceMappingURL=collections-AXAOZ22J.js.map
