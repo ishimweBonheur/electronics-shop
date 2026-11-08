@@ -30,25 +30,7 @@ import { NuxtModule, ModuleDependencyMeta } from '@nuxt/schema'
 
       version: string,
 
-      debug: {
-         templates: boolean,
-
-         modules: boolean,
-
-         watchers: boolean,
-
-         hooks: {
-            client: boolean,
-
-            server: boolean,
-         },
-
-         nitro: boolean,
-
-         router: boolean,
-
-         hydration: boolean,
-      },
+      debug: boolean,
 
       multiTenancy: Array<any>,
    },

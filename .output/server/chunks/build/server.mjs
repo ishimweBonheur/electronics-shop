@@ -749,7 +749,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-CNkZCjo_.mjs')
+    component: () => import('./index-CV3ALn_W.mjs')
   },
   {
     name: "search",
@@ -1188,7 +1188,7 @@ const plugins = [
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-C3g6SYCw.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-CMITZ8zU.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({

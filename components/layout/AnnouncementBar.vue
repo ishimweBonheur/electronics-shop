@@ -1,16 +1,56 @@
+
 <script setup lang="ts">
-withDefaults(defineProps<{ message?: string, mobileMessage?: string }>(), {
-  message: 'FREE EXPRESS SHIPPING ON ORDERS OVER $99 | 30-DAY EASY RETURNS',
-  mobileMessage: 'FREE SHIPPING OVER $99',
-})
+withDefaults(
+  defineProps<{
+    message?: string
+    mobileMessage?: string
+  }>(),
+  {
+    message:
+      'FREE EXPRESS SHIPPING ON ORDERS OVER $99 | 30-DAY EASY RETURNS',
+    mobileMessage: 'FREE SHIPPING OVER $99',
+  }
+)
 </script>
 
 <template>
-  <div class="flex min-h-8 items-center justify-center gap-3 border-b border-dark-border bg-announcement px-4 py-1.5 text-center font-medium uppercase text-text-muted">
-    <p class="text-[9px] leading-relaxed tracking-[0.08em] sm:text-[10px] sm:tracking-[0.12em]">
+  <div
+    role="region"
+    aria-label="Store announcements"
+    class="relative flex min-h-8 items-center overflow-hidden border-b border-dark-border bg-announcement py-2 font-medium uppercase text-text-muted"
+  >
+    <p class="sr-only">
       <span class="sm:hidden">{{ mobileMessage }}</span>
       <span class="hidden sm:inline">{{ message }}</span>
     </p>
-    <span class="shrink-0 rounded-sm border border-dark-border px-1 py-0.5 text-[7px] tracking-wider" title="Illustrative demo offer only">Demo<span class="sr-only"> offer only</span></span>
+    <div
+      aria-hidden="true"
+      class="flex w-max shrink-0 animate-marquee items-center will-change-transform"
+    >
+      <div
+        v-for="index in 2"
+        :key="index"
+        class="flex shrink-0 items-center"
+        :aria-hidden="index === 2 ? 'true' : undefined"
+      >
+        <template v-for="item in 4" :key="item">
+          <span
+            class="mx-8 whitespace-nowrap text-[10px] tracking-[0.12em] sm:mx-12 sm:text-xs"
+          >
+            <span class="sm:hidden">
+              {{ mobileMessage }}
+            </span>
+
+            <span class="hidden sm:inline">
+              {{ message }}
+            </span>
+          </span>
+
+          <span class="text-primary" aria-hidden="true">
+            ✦
+          </span>
+        </template>
+      </div>
+    </div>
   </div>
 </template>

@@ -73,9 +73,9 @@ test-results/
 *.pfx
 service-account*.json
 
-# Supabase local development
+
 supabase/.branches/
 supabase/.temp/
 
-# Miscellaneous
+
 *.local

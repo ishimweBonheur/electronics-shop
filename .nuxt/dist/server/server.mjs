@@ -620,7 +620,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-CNkZCjo_.js")
+    component: () => import("./_nuxt/index-CV3ALn_W.js")
   },
   {
     name: "search",
@@ -1059,7 +1059,7 @@ const plugins = [
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import("./_nuxt/default-C3g6SYCw.js").then((m) => m.default || m))
+  default: defineAsyncComponent(() => import("./_nuxt/default-CMITZ8zU.js").then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({

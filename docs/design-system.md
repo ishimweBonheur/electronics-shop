@@ -45,6 +45,12 @@ Compatibility names reference the canonical object directly: `night` → `hero`,
 `primary.DEFAULT`. These aliases keep existing sections working without a second
 set of independently maintained color values. Prefer canonical names for new code.
 
+The existing Vue components now use the canonical names directly: header/menu,
+announcement, hero gradients, benefits, cards and placeholder pages. Categories
+have an explicit `surface` section background, while best sellers and product
+areas use `background`; foreground colors are explicit on reusable light cards
+so they also remain readable when reused inside a dark parent.
+
 ```vue
 <div class="border border-dark-border bg-dark-surface text-text-white">
   <p class="text-text-muted">Supporting text on a dark surface.</p>

@@ -72,6 +72,15 @@ export default {
         description: ['0.875rem', { lineHeight: '1.6' }],
       },
       transitionDuration: { DEFAULT: '150ms' },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 35s linear infinite',
+      },
       transitionTimingFunction: { DEFAULT: 'cubic-bezier(0.2, 0, 0, 1)' },
     },
   },

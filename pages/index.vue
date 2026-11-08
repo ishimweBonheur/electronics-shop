@@ -22,9 +22,9 @@ useSeoMeta({
   ogTitle: title,
   ogDescription: description,
   ogType: 'website',
-  ogImage: () => siteUrl.value ? `${siteUrl.value}/images/voltix-dark-hero.webp` : undefined,
-  ogImageAlt: 'Black headphones illuminated by electric blue studio lights for Voltix Store',
-  ogImageWidth: 1536,
+  ogImage: () => siteUrl.value ? `${siteUrl.value}/images/voltix-headphones-cutout.webp` : undefined,
+  ogImageAlt: 'Graphite over-ear headphones for Voltix Store',
+  ogImageWidth: 1024,
   ogImageHeight: 1024,
 })
 
