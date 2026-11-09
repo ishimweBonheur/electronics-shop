@@ -3,5 +3,5 @@ useSeoMeta({ title: 'New Arrivals', robots: 'noindex, follow' })
 </script>
 
 <template>
-  <PagePlaceholder eyebrow="New arrivals · Coming soon" title="Meet what’s next." description="New arrivals will appear here when the collection is ready. No live product feed is connected yet." />
+  <GadgetCollection eyebrow="Discover the collection" title="Meet your next everyday essential." description="Preview our sample gadgets while the new arrivals collection is prepared. No live inventory is connected." />
 </template>

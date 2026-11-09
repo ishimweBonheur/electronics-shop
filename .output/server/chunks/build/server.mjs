@@ -734,47 +734,47 @@ const _routes = [
   {
     name: "cart",
     path: "/cart",
-    component: () => import('./cart-BwhPqKbw.mjs')
+    component: () => import('./cart-Ctm1Ivfi.mjs')
   },
   {
     name: "shop",
     path: "/shop",
-    component: () => import('./shop-DHU9031t.mjs')
+    component: () => import('./shop-DEYG3_NZ.mjs')
   },
   {
     name: "deals",
     path: "/deals",
-    component: () => import('./deals-DLHJArqJ.mjs')
+    component: () => import('./deals-DUwevjpL.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-CV3ALn_W.mjs')
+    component: () => import('./index-C5-7sBsV.mjs')
   },
   {
     name: "search",
     path: "/search",
-    component: () => import('./search-d8pQxDdR.mjs')
+    component: () => import('./search-kgFS1e6O.mjs')
   },
   {
     name: "products",
     path: "/products",
-    component: () => import('./products-DFiljMAv.mjs')
+    component: () => import('./products-Cr690IaB.mjs')
   },
   {
     name: "categories",
     path: "/categories",
-    component: () => import('./categories-BB9us8Lb.mjs')
+    component: () => import('./categories-BccnhDjq.mjs')
   },
   {
     name: "best-sellers",
     path: "/best-sellers",
-    component: () => import('./best-sellers-CxtdbAmt.mjs')
+    component: () => import('./best-sellers-DRTygkLs.mjs')
   },
   {
     name: "new-arrivals",
     path: "/new-arrivals",
-    component: () => import('./new-arrivals-BpIEx_Fw.mjs')
+    component: () => import('./new-arrivals-CME5orpb.mjs')
   }
 ];
 const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
@@ -1188,7 +1188,7 @@ const plugins = [
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-CMITZ8zU.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-DJbc5IRU.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({

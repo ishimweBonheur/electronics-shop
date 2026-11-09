@@ -19,7 +19,7 @@ function isActive(to: string) {
 <template>
   <Transition enter-active-class="motion-safe:transition motion-safe:duration-200" enter-from-class="-translate-y-1 opacity-0" enter-to-class="translate-y-0 opacity-100" leave-active-class="motion-safe:transition motion-safe:duration-150" leave-from-class="opacity-100" leave-to-class="opacity-0">
     <nav v-show="open" id="mobile-navigation" :inert="!open" aria-label="Mobile navigation" class="max-h-[calc(100dvh-6rem)] overflow-y-auto overflow-x-hidden border-t border-dark-border bg-navbar px-4 lg:hidden">
-      <ul class="mx-auto max-w-content divide-y divide-dark-border py-2">
+      <ul class="mx-auto max-w-none divide-y divide-dark-border py-2">
         <li v-for="link in headerLinks" :key="link.to">
           <div class="flex items-center">
             <NuxtLink :to="link.to" :aria-current="isActive(link.to) ? 'page' : 'false'" :class="isActive(link.to) ? 'text-primary' : 'text-text-white'" class="min-w-0 flex-1 rounded-control px-3 py-3.5 text-navigation uppercase hover:bg-dark-hover hover:text-accent" @click="emit('navigate')">

@@ -3,5 +3,5 @@ useSeoMeta({ title: 'Shop', robots: 'noindex, follow' })
 </script>
 
 <template>
-  <PagePlaceholder eyebrow="Shop · Coming soon" title="Your next everyday essential is on its way." description="Our product catalog is being prepared. This is a preview route; shopping is not available yet." />
+  <GadgetCollection eyebrow="Explore Voltix" title="Made for your everyday." description="Browse our demo gadget collection. Images and USD prices are illustrative; purchases are not available." />
 </template>

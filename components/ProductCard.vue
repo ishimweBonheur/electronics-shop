@@ -10,8 +10,8 @@ const formattedPrice = computed(() => new Intl.NumberFormat('en-US', {
 <template>
   <article class="group h-full overflow-hidden rounded-card border border-border bg-background text-text-primary shadow-card motion-safe:transition-shadow hover:shadow-card-hover">
     <NuxtLink :to="`/shop?product=${product.slug}`" class="flex h-full flex-col rounded-card">
-      <div class="relative bg-surface px-4 py-5 sm:px-5">
-        <NuxtImg :src="product.image" alt="" width="480" height="480" sizes="50vw sm:33vw lg:240px" loading="lazy" class="aspect-square w-full mix-blend-multiply motion-safe:transition-transform motion-safe:group-hover:scale-105" />
+      <div class="relative px-4 py-5 sm:px-5">
+        <NuxtImg :src="product.image" alt="" width="480" height="480" sizes="50vw sm:33vw lg:240px" loading="lazy" class="aspect-square w-full object-contain motion-safe:transition-transform motion-safe:group-hover:scale-105" />
         <span class="absolute left-3 top-3 rounded-sm bg-background/95 px-1.5 py-1 text-[9px] font-medium uppercase tracking-wide text-text-secondary">Demo</span>
       </div>
       <div class="flex flex-1 flex-col p-3 sm:p-4">

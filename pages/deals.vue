@@ -3,5 +3,5 @@ useSeoMeta({ title: 'Deals', robots: 'noindex, follow' })
 </script>
 
 <template>
-  <PagePlaceholder eyebrow="Deals · Coming soon" title="Good tech. More possibilities." description="Future offers will appear here. The announcement bar is illustrative demo content, and no promotions are currently active." />
+  <GadgetCollection eyebrow="Explore more" title="Good tech. More possibilities." description="Browse sample products while future offers are prepared. No discounts or promotions are currently active." />
 </template>

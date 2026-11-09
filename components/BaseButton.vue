@@ -23,15 +23,15 @@ withDefaults(defineProps<{
   to: undefined,
 })
 
-const darkOutline = 'border border-dark-outline bg-transparent text-text-white hover:bg-dark-surface disabled:hover:bg-transparent'
+const darkOutline = ' bg-transparent text-text-white hover:bg-dark-surface disabled:hover:bg-transparent'
 const variants: Record<Variant, string> = {
-  primary: 'border-0 bg-primary text-text-white hover:bg-primary-hover disabled:hover:bg-primary',
-  secondary: 'border-0 bg-secondary text-text-white hover:bg-secondary-hover disabled:hover:bg-secondary',
+  primary: ' bg-primary text-text-white hover:bg-primary-hover disabled:hover:bg-primary',
+  secondary: ' bg-secondary text-text-white hover:bg-secondary-hover disabled:hover:bg-secondary',
   outline: darkOutline,
   'dark-outline': darkOutline,
-  'light-outline': 'border border-border bg-transparent text-text-primary hover:bg-surface-hover disabled:hover:bg-transparent',
-  ghost: 'border-0 bg-transparent text-inherit hover:bg-primary/10 disabled:hover:bg-transparent',
-  danger: 'border-0 bg-error text-text-white hover:bg-error-hover disabled:hover:bg-error',
+  'light-outline': 'bg-transparent text-text-primary hover:bg-surface-hover disabled:hover:bg-transparent',
+  ghost: ' bg-transparent text-inherit hover:bg-primary/10 disabled:hover:bg-transparent',
+  danger: ' bg-error text-text-white hover:bg-error-hover disabled:hover:bg-error',
 }
 
 const sizes: Record<Size, string> = {

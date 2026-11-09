@@ -25,7 +25,7 @@ useSeoMeta({ title: 'Search', robots: 'noindex, follow' })
         {{ matches.length }} demo {{ matches.length === 1 ? 'product' : 'products' }} found for “{{ query }}”.
       </p>
       <div v-if="matches.length" class="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-        <ProductCard v-for="product in matches" :key="product.slug" :product="product" />
+        <ProductCard v-for="product in matches" :key="product.slug" :product="product" data-scroll="fade-up" data-scroll-stagger />
       </div>
       <p v-else class="mt-3 text-sm text-text-secondary">Try “headphones”, “charger”, or “camera”.</p>
     </div>

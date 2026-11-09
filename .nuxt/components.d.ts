@@ -17,6 +17,7 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 export const AppIcon: typeof import("../components/AppIcon.vue")['default']
 export const BaseButton: typeof import("../components/BaseButton.vue")['default']
 export const CategoryCard: typeof import("../components/CategoryCard.vue")['default']
+export const GadgetCollection: typeof import("../components/GadgetCollection.vue")['default']
 export const PagePlaceholder: typeof import("../components/PagePlaceholder.vue")['default']
 export const ProductCard: typeof import("../components/ProductCard.vue")['default']
 export const HomeBenefits: typeof import("../components/home/HomeBenefits.vue")['default']
@@ -53,6 +54,7 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const LazyAppIcon: LazyComponent<typeof import("../components/AppIcon.vue")['default']>
 export const LazyBaseButton: LazyComponent<typeof import("../components/BaseButton.vue")['default']>
 export const LazyCategoryCard: LazyComponent<typeof import("../components/CategoryCard.vue")['default']>
+export const LazyGadgetCollection: LazyComponent<typeof import("../components/GadgetCollection.vue")['default']>
 export const LazyPagePlaceholder: LazyComponent<typeof import("../components/PagePlaceholder.vue")['default']>
 export const LazyProductCard: LazyComponent<typeof import("../components/ProductCard.vue")['default']>
 export const LazyHomeBenefits: LazyComponent<typeof import("../components/home/HomeBenefits.vue")['default']>

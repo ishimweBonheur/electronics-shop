@@ -4,7 +4,7 @@ const field = `${control} border-border bg-background text-text-primary placehol
 const darkField = `${control} border-dark-border text-text-white placeholder:text-text-muted focus:border-primary [color-scheme:dark]`
 
 export const ui = {
-  pageContainer: 'mx-auto w-full max-w-content px-page-mobile sm:px-page-tablet lg:px-page-desktop',
+  pageContainer: 'mx-auto w-full max-w-none px-page-mobile sm:px-page-tablet lg:px-page-desktop',
   section: 'py-8 sm:py-12 lg:py-16',
   sectionHeading: 'mb-6 space-y-2 sm:mb-8',
   sectionTitle: 'text-heading-2 text-text-primary',

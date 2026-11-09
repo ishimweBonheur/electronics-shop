@@ -17,6 +17,7 @@ interface _GlobalComponents {
   AppIcon: typeof import("../../components/AppIcon.vue")['default']
   BaseButton: typeof import("../../components/BaseButton.vue")['default']
   CategoryCard: typeof import("../../components/CategoryCard.vue")['default']
+  GadgetCollection: typeof import("../../components/GadgetCollection.vue")['default']
   PagePlaceholder: typeof import("../../components/PagePlaceholder.vue")['default']
   ProductCard: typeof import("../../components/ProductCard.vue")['default']
   HomeBenefits: typeof import("../../components/home/HomeBenefits.vue")['default']
@@ -53,6 +54,7 @@ interface _GlobalComponents {
   LazyAppIcon: LazyComponent<typeof import("../../components/AppIcon.vue")['default']>
   LazyBaseButton: LazyComponent<typeof import("../../components/BaseButton.vue")['default']>
   LazyCategoryCard: LazyComponent<typeof import("../../components/CategoryCard.vue")['default']>
+  LazyGadgetCollection: LazyComponent<typeof import("../../components/GadgetCollection.vue")['default']>
   LazyPagePlaceholder: LazyComponent<typeof import("../../components/PagePlaceholder.vue")['default']>
   LazyProductCard: LazyComponent<typeof import("../../components/ProductCard.vue")['default']>
   LazyHomeBenefits: LazyComponent<typeof import("../../components/home/HomeBenefits.vue")['default']>

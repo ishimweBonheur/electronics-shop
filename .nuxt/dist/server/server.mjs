@@ -605,47 +605,47 @@ const _routes = [
   {
     name: "cart",
     path: "/cart",
-    component: () => import("./_nuxt/cart-BwhPqKbw.js")
+    component: () => import("./_nuxt/cart-Ctm1Ivfi.js")
   },
   {
     name: "shop",
     path: "/shop",
-    component: () => import("./_nuxt/shop-DHU9031t.js")
+    component: () => import("./_nuxt/shop-DEYG3_NZ.js")
   },
   {
     name: "deals",
     path: "/deals",
-    component: () => import("./_nuxt/deals-DLHJArqJ.js")
+    component: () => import("./_nuxt/deals-DUwevjpL.js")
   },
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-CV3ALn_W.js")
+    component: () => import("./_nuxt/index-C5-7sBsV.js")
   },
   {
     name: "search",
     path: "/search",
-    component: () => import("./_nuxt/search-d8pQxDdR.js")
+    component: () => import("./_nuxt/search-kgFS1e6O.js")
   },
   {
     name: "products",
     path: "/products",
-    component: () => import("./_nuxt/products-DFiljMAv.js")
+    component: () => import("./_nuxt/products-Cr690IaB.js")
   },
   {
     name: "categories",
     path: "/categories",
-    component: () => import("./_nuxt/categories-BB9us8Lb.js")
+    component: () => import("./_nuxt/categories-BccnhDjq.js")
   },
   {
     name: "best-sellers",
     path: "/best-sellers",
-    component: () => import("./_nuxt/best-sellers-CxtdbAmt.js")
+    component: () => import("./_nuxt/best-sellers-DRTygkLs.js")
   },
   {
     name: "new-arrivals",
     path: "/new-arrivals",
-    component: () => import("./_nuxt/new-arrivals-BpIEx_Fw.js")
+    component: () => import("./_nuxt/new-arrivals-CME5orpb.js")
   }
 ];
 const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
@@ -1059,7 +1059,7 @@ const plugins = [
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import("./_nuxt/default-CMITZ8zU.js").then((m) => m.default || m))
+  default: defineAsyncComponent(() => import("./_nuxt/default-DJbc5IRU.js").then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({
