@@ -14,12 +14,9 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
-export const AppIcon: typeof import("../components/AppIcon.vue")['default']
-export const BaseButton: typeof import("../components/BaseButton.vue")['default']
-export const CategoryCard: typeof import("../components/CategoryCard.vue")['default']
-export const GadgetCollection: typeof import("../components/GadgetCollection.vue")['default']
-export const PagePlaceholder: typeof import("../components/PagePlaceholder.vue")['default']
-export const ProductCard: typeof import("../components/ProductCard.vue")['default']
+export const CartEmpty: typeof import("../components/cart/CartEmpty.vue")['default']
+export const CategoriesCategoryCard: typeof import("../components/categories/CategoryCard.vue")['default']
+export const CategoriesCategoryCollection: typeof import("../components/categories/CategoryCollection.vue")['default']
 export const HomeBenefits: typeof import("../components/home/HomeBenefits.vue")['default']
 export const HomeBestSellers: typeof import("../components/home/HomeBestSellers.vue")['default']
 export const HomeCategories: typeof import("../components/home/HomeCategories.vue")['default']
@@ -28,6 +25,13 @@ export const LayoutAnnouncementBar: typeof import("../components/layout/Announce
 export const LayoutAppHeader: typeof import("../components/layout/AppHeader.vue")['default']
 export const LayoutHeaderSearch: typeof import("../components/layout/HeaderSearch.vue")['default']
 export const LayoutMobileNavigation: typeof import("../components/layout/MobileNavigation.vue")['default']
+export const ProductsGadgetCollection: typeof import("../components/products/GadgetCollection.vue")['default']
+export const ProductsProductCard: typeof import("../components/products/ProductCard.vue")['default']
+export const ProductsProductSearch: typeof import("../components/products/ProductSearch.vue")['default']
+export const ProductsProductShop: typeof import("../components/products/ProductShop.vue")['default']
+export const UiAppIcon: typeof import("../components/ui/AppIcon.vue")['default']
+export const UiBaseButton: typeof import("../components/ui/BaseButton.vue")['default']
+export const UiPagePlaceholder: typeof import("../components/ui/PagePlaceholder.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -51,12 +55,9 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
-export const LazyAppIcon: LazyComponent<typeof import("../components/AppIcon.vue")['default']>
-export const LazyBaseButton: LazyComponent<typeof import("../components/BaseButton.vue")['default']>
-export const LazyCategoryCard: LazyComponent<typeof import("../components/CategoryCard.vue")['default']>
-export const LazyGadgetCollection: LazyComponent<typeof import("../components/GadgetCollection.vue")['default']>
-export const LazyPagePlaceholder: LazyComponent<typeof import("../components/PagePlaceholder.vue")['default']>
-export const LazyProductCard: LazyComponent<typeof import("../components/ProductCard.vue")['default']>
+export const LazyCartEmpty: LazyComponent<typeof import("../components/cart/CartEmpty.vue")['default']>
+export const LazyCategoriesCategoryCard: LazyComponent<typeof import("../components/categories/CategoryCard.vue")['default']>
+export const LazyCategoriesCategoryCollection: LazyComponent<typeof import("../components/categories/CategoryCollection.vue")['default']>
 export const LazyHomeBenefits: LazyComponent<typeof import("../components/home/HomeBenefits.vue")['default']>
 export const LazyHomeBestSellers: LazyComponent<typeof import("../components/home/HomeBestSellers.vue")['default']>
 export const LazyHomeCategories: LazyComponent<typeof import("../components/home/HomeCategories.vue")['default']>
@@ -65,6 +66,13 @@ export const LazyLayoutAnnouncementBar: LazyComponent<typeof import("../componen
 export const LazyLayoutAppHeader: LazyComponent<typeof import("../components/layout/AppHeader.vue")['default']>
 export const LazyLayoutHeaderSearch: LazyComponent<typeof import("../components/layout/HeaderSearch.vue")['default']>
 export const LazyLayoutMobileNavigation: LazyComponent<typeof import("../components/layout/MobileNavigation.vue")['default']>
+export const LazyProductsGadgetCollection: LazyComponent<typeof import("../components/products/GadgetCollection.vue")['default']>
+export const LazyProductsProductCard: LazyComponent<typeof import("../components/products/ProductCard.vue")['default']>
+export const LazyProductsProductSearch: LazyComponent<typeof import("../components/products/ProductSearch.vue")['default']>
+export const LazyProductsProductShop: LazyComponent<typeof import("../components/products/ProductShop.vue")['default']>
+export const LazyUiAppIcon: LazyComponent<typeof import("../components/ui/AppIcon.vue")['default']>
+export const LazyUiBaseButton: LazyComponent<typeof import("../components/ui/BaseButton.vue")['default']>
+export const LazyUiPagePlaceholder: LazyComponent<typeof import("../components/ui/PagePlaceholder.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

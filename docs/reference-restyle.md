@@ -22,7 +22,7 @@ Category tiles link to a placeholder that acknowledges the selected category.
 - `components/home/HomeHero.vue`: new headline, dark responsive hero and existing BaseButton links.
 - `components/home/HomeHighlights.vue`: four descriptive editorial highlights.
 - `components/home/HomeCollections.vue`: six category links and five collection preview cards.
-- `utils/collections.ts`: shared category labels, slugs and image names, not inventory.
+- `utils/categories/collections.ts`: shared category labels, slugs and image names, not inventory.
 - `pages/categories.vue`: selected-category placeholder content.
 - `pages/index.vue`: section assembly and updated Open Graph image.
 - `tailwind.config.ts`: additive semantic dark-surface and inverse-text tokens.

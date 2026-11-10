@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { demoProducts } from '~/utils/demo-products'
+import AppIcon from '~/components/ui/AppIcon.vue'
+import ProductCard from '~/components/products/ProductCard.vue'
+import { useScrollAnimation } from '~/composables/ui/useScrollAnimation'
+import { demoProducts } from '~/utils/products/demo-products'
 import { ui } from '~/utils/ui'
 
 const scrollRoot = ref<HTMLElement | null>(null)

@@ -12,7 +12,7 @@ function compile(path, require = () => {}) {
   return { exports, code, require }
 }
 
-const math = compile('../utils/scroll-animation.ts')
+const math = compile('../utils/ui/scroll-animation.ts')
 runInNewContext(math.code, math)
 
 test('progress clamps and restores identical values in both directions', () => {
@@ -47,7 +47,7 @@ test('shared frame scheduling, reversal, reduced motion, focus, and cleanup', ()
     removeEventListener(name) { listeners.delete(name) },
   }
   const document = { activeElement: null, documentElement: { scrollHeight: 2000 } }
-  const module = compile('../composables/useScrollAnimation.ts', name => name === 'vue'
+  const module = compile('../composables/ui/useScrollAnimation.ts', name => name === 'vue'
     ? { onMounted: fn => { current.mount = fn }, onUpdated: fn => { current.update = fn }, onBeforeUnmount: fn => { current.unmount = fn } }
     : math.exports)
   runInNewContext(module.code, { ...module, window, document, HTMLElement: Element })

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AppIcon from '~/components/ui/AppIcon.vue'
+import { useScrollAnimation } from '~/composables/ui/useScrollAnimation'
 import { ui } from '~/utils/ui'
 
 const scrollRoot = ref<HTMLElement | null>(null)

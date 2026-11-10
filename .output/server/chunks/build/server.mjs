@@ -1,4 +1,4 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};globalThis.__timing__.logStart('Load chunks/build/server');import { toRef, isRef, hasInjectionContext, getCurrentInstance, inject, getCurrentScope, defineComponent, createElementBlock, shallowRef, provide, cloneVNode, h, defineAsyncComponent, computed, unref, shallowReactive, ref, createApp, isVNode, createCommentVNode, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, reactive, effectScope, mergeProps, withCtx, Suspense, nextTick, Fragment, isReadonly, toRaw, useSSRContext, isShallow, isReactive } from 'vue';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};globalThis.__timing__.logStart('Load chunks/build/server');import { hasInjectionContext, getCurrentInstance, inject, toRef, isRef, getCurrentScope, defineComponent, createElementBlock, shallowRef, provide, cloneVNode, h, defineAsyncComponent, computed, unref, shallowReactive, ref, createApp, isVNode, createCommentVNode, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, reactive, effectScope, mergeProps, withCtx, Suspense, nextTick, Fragment, isReadonly, toRaw, useSSRContext, isShallow, isReactive } from 'vue';
 import { f as createError$1, p as parseURL, e as encodePath, l as decodePath, m as hasProtocol, n as isScriptProtocol, o as joinURL, w as withQuery, q as sanitizeStatusCode, $ as $fetch, r as defu, v as createHooks, x as createDebugger } from '../_/nitro.mjs';
 import { b as baseURL } from '../routes/renderer.mjs';
 import { createPinia, setActivePinia, shouldHydrate } from 'pinia';
@@ -730,51 +730,67 @@ const generateRouteKey = (routeProps, override) => {
 function toArray(value) {
   return Array.isArray(value) ? value : [value];
 }
+const __nuxt_page_meta$7 = { path: "/cart", name: "cart" };
+const __nuxt_page_meta$6 = { path: "/shop", name: "shop" };
+const __nuxt_page_meta$5 = { path: "/deals", name: "deals" };
+const __nuxt_page_meta$4 = { path: "/products", name: "products" };
+const __nuxt_page_meta$3 = { path: "/search", name: "search" };
+const __nuxt_page_meta$2 = { path: "/categories", name: "categories" };
+const __nuxt_page_meta$1 = { path: "/best-sellers", name: "best-sellers" };
+const __nuxt_page_meta = { path: "/new-arrivals", name: "new-arrivals" };
 const _routes = [
+  {
+    name: "index",
+    path: "/",
+    component: () => import('./index-CrmAPyS0.mjs')
+  },
   {
     name: "cart",
     path: "/cart",
-    component: () => import('./cart-Ctm1Ivfi.mjs')
+    meta: __nuxt_page_meta$7 || {},
+    component: () => import('./index-B6gZ5-S7.mjs')
   },
   {
     name: "shop",
     path: "/shop",
-    component: () => import('./shop-DEYG3_NZ.mjs')
+    meta: __nuxt_page_meta$6 || {},
+    component: () => import('./shop-3ORrtlJH.mjs')
   },
   {
     name: "deals",
     path: "/deals",
-    component: () => import('./deals-DUwevjpL.mjs')
-  },
-  {
-    name: "index",
-    path: "/",
-    component: () => import('./index-C5-7sBsV.mjs')
-  },
-  {
-    name: "search",
-    path: "/search",
-    component: () => import('./search-kgFS1e6O.mjs')
+    meta: __nuxt_page_meta$5 || {},
+    component: () => import('./deals-D8M-tIH2.mjs')
   },
   {
     name: "products",
     path: "/products",
-    component: () => import('./products-Cr690IaB.mjs')
+    meta: __nuxt_page_meta$4 || {},
+    component: () => import('./index-C8wj4X86.mjs')
+  },
+  {
+    name: "search",
+    path: "/search",
+    meta: __nuxt_page_meta$3 || {},
+    component: () => import('./search-Do-CQJwM.mjs')
   },
   {
     name: "categories",
     path: "/categories",
-    component: () => import('./categories-BccnhDjq.mjs')
+    meta: __nuxt_page_meta$2 || {},
+    component: () => import('./index-9IWBGpYk.mjs')
   },
   {
     name: "best-sellers",
     path: "/best-sellers",
-    component: () => import('./best-sellers-DRTygkLs.mjs')
+    meta: __nuxt_page_meta$1 || {},
+    component: () => import('./best-sellers-CEuIxWSB.mjs')
   },
   {
     name: "new-arrivals",
     path: "/new-arrivals",
-    component: () => import('./new-arrivals-CME5orpb.mjs')
+    meta: __nuxt_page_meta || {},
+    component: () => import('./new-arrivals-DMigX2RR.mjs')
   }
 ];
 const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
@@ -1188,7 +1204,7 @@ const plugins = [
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-DJbc5IRU.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-CYzkraLN.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({
@@ -1486,7 +1502,7 @@ const _sfc_main$1 = {
     const statusText = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-C4ZHqLaY.mjs'));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-CLbkmgC0.mjs'));
     const _Error = defineAsyncComponent(() => import('./error-500-ClwSMDgb.mjs'));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
@@ -1579,5 +1595,5 @@ let entry;
 }
 const entry_default = ((ssrContext) => entry(ssrContext));
 
-export { _export_sfc as _, useState as a, useRuntimeConfig as b, useNuxtApp as c, createError as d, entry_default as default, useRequestEvent as e, useRouter as f, encodeRoutePath as g, nuxtLinkDefaults as h, navigateTo as n, resolveRouteObject as r, tryUseNuxtApp as t, useRoute as u };;globalThis.__timing__.logEnd('Load chunks/build/server');
+export { _export_sfc as _, useRuntimeConfig as a, useRoute as b, useNuxtApp as c, createError as d, entry_default as default, useRequestEvent as e, useRouter as f, encodeRoutePath as g, nuxtLinkDefaults as h, navigateTo as n, resolveRouteObject as r, tryUseNuxtApp as t, useState as u };;globalThis.__timing__.logEnd('Load chunks/build/server');
 //# sourceMappingURL=server.mjs.map

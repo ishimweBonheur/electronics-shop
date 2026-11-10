@@ -21,13 +21,13 @@ no breakpoint overrides to white backgrounds.
   type and BaseButton links. Images retain explicit dimensions and responsive sizes.
 - `components/home/HomeBenefits.vue`: four specified delivery/returns/warranty/
   support examples. Visible text explicitly identifies them as demonstration offers.
-- `components/home/HomeCategories.vue` and `components/CategoryCard.vue`: six
+- `components/home/HomeCategories.vue` and `components/categories/CategoryCard.vue`: six
   reusable local category cards in a responsive grid.
-- `components/home/HomeBestSellers.vue` and `components/ProductCard.vue`: five
+- `components/home/HomeBestSellers.vue` and `components/products/ProductCard.vue`: five
   typed example products with sample USD prices and preview links. “Best sellers”
   is a demo section name, not a real sales ranking. No ratings or review counts
   are supplied. Optional ratings in ProductCard would be explicitly labeled demo.
-- `types/catalog.ts`, `utils/collections.ts`, `utils/demo-products.ts`: separate
+- `types/categories/index.ts`, `types/products/index.ts`, `utils/categories/collections.ts`, `utils/products/demo-products.ts`: separate
   presentation data and TypeScript interfaces, ready to replace with real data later.
 - `pages/shop.vue`: acknowledges the selected product/collection and shows a
   non-purchasable product preview. New Arrivals and Deals have meaningful placeholders.

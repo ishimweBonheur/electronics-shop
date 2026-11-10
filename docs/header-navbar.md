@@ -11,8 +11,8 @@ benefit, category, product, footer and backend code is not extended or rebuilt.
 | `components/layout/AppHeader.vue` | Sticky #08090B header, original uppercase lightning logo, white controls, active blue navigation, zero cart badge and mutually exclusive mobile/search panels. The three-column mobile grid keeps the logo centered independently of the action widths. Desktop navigation starts at 1024px. |
 | `components/layout/MobileNavigation.vue` | Full-width dark disclosure with separators, real category expansion, chevron state, accessible controls and links. Hidden content is inert. Panel height is bounded to the viewport and scrolls vertically. |
 | `components/layout/HeaderSearch.vue` | Dark search interface with icon, white text and explicit focus styles. Opening focuses the field; submitting uses the existing local demo search. It makes no real-catalog or backend claims. |
-| `utils/navigation.ts` | Single set of navigation labels and the five requested route paths, shared by desktop and mobile. |
-| `components/AppIcon.vue` | Adds original inline SVG lightning and chevron paths to the existing icon component; no icon package is installed. |
+| `utils/layout/navigation.ts` | Single set of navigation labels and the five requested route paths, shared by desktop and mobile. |
+| `components/ui/AppIcon.vue` | Adds original inline SVG lightning and chevron paths to the existing icon component; no icon package is installed. |
 | `layouts/default.vue` | Passes AnnouncementBar into AppHeader’s announcement slot so the layout owns integration and both elements are rendered once in the same sticky region. Existing skip link and main-focus handling are retained. |
 | `tailwind.config.ts` | Adds only `announcement: '#050608'`. All existing tokens, including `navbar: '#08090B'` and `primary: '#1677FF'`, are preserved in Tailwind v3 configuration. |
 | `pages/products.vue` | Minimal upcoming Shop route. |

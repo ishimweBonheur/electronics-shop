@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { collections } from '~/utils/collections'
+import AppIcon from '~/components/ui/AppIcon.vue'
+import CategoryCard from '~/components/categories/CategoryCard.vue'
+import { useScrollAnimation } from '~/composables/ui/useScrollAnimation'
+import { collections } from '~/utils/categories/collections'
 import { ui } from '~/utils/ui'
 
 const scrollRoot = ref<HTMLElement | null>(null)

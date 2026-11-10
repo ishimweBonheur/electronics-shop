@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import BaseButton from '~/components/ui/BaseButton.vue'
+import { useScrollAnimation } from '~/composables/ui/useScrollAnimation'
 import { ui } from '~/utils/ui'
 
 const scrollRoot = ref<HTMLElement | null>(null)

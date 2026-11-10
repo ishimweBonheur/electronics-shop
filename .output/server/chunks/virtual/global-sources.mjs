@@ -9,6 +9,9 @@ globalThis.__timing__.logStart('Load chunks/virtual/global-sources');const sourc
         },
         "urls": [
             {
+                "loc": "/"
+            },
+            {
                 "loc": "/cart"
             },
             {
@@ -18,13 +21,10 @@ globalThis.__timing__.logStart('Load chunks/virtual/global-sources');const sourc
                 "loc": "/deals"
             },
             {
-                "loc": "/"
+                "loc": "/products"
             },
             {
                 "loc": "/search"
-            },
-            {
-                "loc": "/products"
             },
             {
                 "loc": "/categories"

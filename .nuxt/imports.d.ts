@@ -30,12 +30,6 @@ export { requestIdleCallback, cancelIdleCallback } from '#app/compat/idle-callba
 export { setInterval } from '#app/compat/interval';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
-export { useScrollAnimation } from '../composables/useScrollAnimation';
-export { collections } from '../utils/collections';
-export { demoProducts } from '../utils/demo-products';
-export { headerLinks } from '../utils/navigation';
-export { clampProgress, scrollProgress, interpolate } from '../utils/scroll-animation';
-export { ui } from '../utils/ui';
 export { getNitroOrigin } from '../node_modules/nuxt-site-config/dist/runtime/app/composables/getNitroOrigin';
 export { updateSiteConfig } from '../node_modules/nuxt-site-config/dist/runtime/app/composables/updateSiteConfig';
 export { useNitroOrigin } from '../node_modules/nuxt-site-config/dist/runtime/app/composables/useNitroOrigin';

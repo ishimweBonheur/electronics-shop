@@ -100,7 +100,7 @@ hero and section headings only receive shared styles; no section is rebuilt.
 
 ## Buttons
 
-Nuxt auto-imports `components/BaseButton.vue`. It supports native buttons or typed
+Explicitly import `BaseButton` from `~/components/ui/BaseButton.vue`. It supports native buttons or typed
 NuxtLink destinations, three sizes, disabled/loading states, and `icon-left` /
 `icon-right` slots. Disabled/loading links become disabled buttons, preserving the
 existing no-navigation behavior. Loading adds an `aria-busy` state and status text.
@@ -153,7 +153,7 @@ not a claim of a complete WCAG audit of the website.
 
 ## Layout and shared UI recipes
 
-`utils/ui.ts` exports static class recipes rather than custom CSS components:
+`utils/ui/index.ts` exports static class recipes rather than custom CSS components:
 
 ```vue
 <script setup lang="ts">
@@ -192,13 +192,13 @@ dependencies are added by this design-system change.
   typography and transition tokens.
 - `assets/css/main.css`: stable native color-scheme baseline; existing element
   defaults consume the updated typography tokens.
-- `components/BaseButton.vue`: exact variant/hover colors, dark and light outlines,
+- `components/ui/BaseButton.vue`: exact variant/hover colors, dark and light outlines,
   inherited ghost text, contrast-sized labels, state/focus styling and sizes.
-- `utils/ui.ts`: shared light/dark inputs, focus rings, status badges and container
+- `utils/ui/index.ts`: shared light/dark inputs, focus rings, status badges and container
   spacing. Error badges use the darker error tone for small-text contrast.
-- `components/ProductCard.vue`, `components/CategoryCard.vue`: 12px card radii,
+- `components/products/ProductCard.vue`, `components/categories/CategoryCard.vue`: 12px card radii,
   shared shadows, product typography and surface hover.
-- `components/PagePlaceholder.vue`: light-outline variant migration and darker
+- `components/ui/PagePlaceholder.vue`: light-outline variant migration and darker
   small blue text on white.
 - `components/layout/HeaderSearch.vue`: shared dark input recipe.
 - `components/layout/AppHeader.vue`, `components/layout/MobileNavigation.vue`:

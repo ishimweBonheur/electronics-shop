@@ -14,12 +14,9 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
-  AppIcon: typeof import("../../components/AppIcon.vue")['default']
-  BaseButton: typeof import("../../components/BaseButton.vue")['default']
-  CategoryCard: typeof import("../../components/CategoryCard.vue")['default']
-  GadgetCollection: typeof import("../../components/GadgetCollection.vue")['default']
-  PagePlaceholder: typeof import("../../components/PagePlaceholder.vue")['default']
-  ProductCard: typeof import("../../components/ProductCard.vue")['default']
+  CartEmpty: typeof import("../../components/cart/CartEmpty.vue")['default']
+  CategoriesCategoryCard: typeof import("../../components/categories/CategoryCard.vue")['default']
+  CategoriesCategoryCollection: typeof import("../../components/categories/CategoryCollection.vue")['default']
   HomeBenefits: typeof import("../../components/home/HomeBenefits.vue")['default']
   HomeBestSellers: typeof import("../../components/home/HomeBestSellers.vue")['default']
   HomeCategories: typeof import("../../components/home/HomeCategories.vue")['default']
@@ -28,6 +25,13 @@ interface _GlobalComponents {
   LayoutAppHeader: typeof import("../../components/layout/AppHeader.vue")['default']
   LayoutHeaderSearch: typeof import("../../components/layout/HeaderSearch.vue")['default']
   LayoutMobileNavigation: typeof import("../../components/layout/MobileNavigation.vue")['default']
+  ProductsGadgetCollection: typeof import("../../components/products/GadgetCollection.vue")['default']
+  ProductsProductCard: typeof import("../../components/products/ProductCard.vue")['default']
+  ProductsProductSearch: typeof import("../../components/products/ProductSearch.vue")['default']
+  ProductsProductShop: typeof import("../../components/products/ProductShop.vue")['default']
+  UiAppIcon: typeof import("../../components/ui/AppIcon.vue")['default']
+  UiBaseButton: typeof import("../../components/ui/BaseButton.vue")['default']
+  UiPagePlaceholder: typeof import("../../components/ui/PagePlaceholder.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -51,12 +55,9 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
-  LazyAppIcon: LazyComponent<typeof import("../../components/AppIcon.vue")['default']>
-  LazyBaseButton: LazyComponent<typeof import("../../components/BaseButton.vue")['default']>
-  LazyCategoryCard: LazyComponent<typeof import("../../components/CategoryCard.vue")['default']>
-  LazyGadgetCollection: LazyComponent<typeof import("../../components/GadgetCollection.vue")['default']>
-  LazyPagePlaceholder: LazyComponent<typeof import("../../components/PagePlaceholder.vue")['default']>
-  LazyProductCard: LazyComponent<typeof import("../../components/ProductCard.vue")['default']>
+  LazyCartEmpty: LazyComponent<typeof import("../../components/cart/CartEmpty.vue")['default']>
+  LazyCategoriesCategoryCard: LazyComponent<typeof import("../../components/categories/CategoryCard.vue")['default']>
+  LazyCategoriesCategoryCollection: LazyComponent<typeof import("../../components/categories/CategoryCollection.vue")['default']>
   LazyHomeBenefits: LazyComponent<typeof import("../../components/home/HomeBenefits.vue")['default']>
   LazyHomeBestSellers: LazyComponent<typeof import("../../components/home/HomeBestSellers.vue")['default']>
   LazyHomeCategories: LazyComponent<typeof import("../../components/home/HomeCategories.vue")['default']>
@@ -65,6 +66,13 @@ interface _GlobalComponents {
   LazyLayoutAppHeader: LazyComponent<typeof import("../../components/layout/AppHeader.vue")['default']>
   LazyLayoutHeaderSearch: LazyComponent<typeof import("../../components/layout/HeaderSearch.vue")['default']>
   LazyLayoutMobileNavigation: LazyComponent<typeof import("../../components/layout/MobileNavigation.vue")['default']>
+  LazyProductsGadgetCollection: LazyComponent<typeof import("../../components/products/GadgetCollection.vue")['default']>
+  LazyProductsProductCard: LazyComponent<typeof import("../../components/products/ProductCard.vue")['default']>
+  LazyProductsProductSearch: LazyComponent<typeof import("../../components/products/ProductSearch.vue")['default']>
+  LazyProductsProductShop: LazyComponent<typeof import("../../components/products/ProductShop.vue")['default']>
+  LazyUiAppIcon: LazyComponent<typeof import("../../components/ui/AppIcon.vue")['default']>
+  LazyUiBaseButton: LazyComponent<typeof import("../../components/ui/BaseButton.vue")['default']>
+  LazyUiPagePlaceholder: LazyComponent<typeof import("../../components/ui/PagePlaceholder.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

@@ -16,11 +16,12 @@ as `LayoutAppHeader` and `HomeHero` using its filename prefix deduplication.
   navigation, search/cart destinations, and a mobile disclosure menu.
 - `components/home/HomeHero.vue`: responsive copy and locally stored hero image;
   stacked below 1024px, two columns above it.
-- `components/AppIcon.vue`: small, typed collection of original inline SVG icons.
-- `components/BaseButton.vue`: extended with a typed `to` prop. Navigation renders
+- `components/ui/AppIcon.vue`: small, typed collection of original inline SVG icons.
+- `components/ui/BaseButton.vue`: extended with a typed `to` prop. Navigation renders
   a NuxtLink with native anchor semantics; actions remain native buttons. A loading
   or disabled destination renders a disabled button, so it cannot navigate.
-- `components/PagePlaceholder.vue` and `pages/{shop,categories,cart,search}.vue`:
+- `components/ui/PagePlaceholder.vue`, `pages/products/{shop,search}.vue`,
+  `pages/categories/index.vue`, and `pages/cart/index.vue`:
   intentionally minimal destinations. Search accepts a GET query and explains
   availability; it does not fabricate results. Placeholder pages are `noindex`.
 

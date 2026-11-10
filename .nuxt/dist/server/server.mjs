@@ -601,51 +601,67 @@ const generateRouteKey = (routeProps, override) => {
 function toArray(value) {
   return Array.isArray(value) ? value : [value];
 }
+const __nuxt_page_meta$7 = { path: "/cart", name: "cart" };
+const __nuxt_page_meta$6 = { path: "/shop", name: "shop" };
+const __nuxt_page_meta$5 = { path: "/deals", name: "deals" };
+const __nuxt_page_meta$4 = { path: "/products", name: "products" };
+const __nuxt_page_meta$3 = { path: "/search", name: "search" };
+const __nuxt_page_meta$2 = { path: "/categories", name: "categories" };
+const __nuxt_page_meta$1 = { path: "/best-sellers", name: "best-sellers" };
+const __nuxt_page_meta = { path: "/new-arrivals", name: "new-arrivals" };
 const _routes = [
+  {
+    name: "index",
+    path: "/",
+    component: () => import("./_nuxt/index-CrmAPyS0.js")
+  },
   {
     name: "cart",
     path: "/cart",
-    component: () => import("./_nuxt/cart-Ctm1Ivfi.js")
+    meta: __nuxt_page_meta$7 || {},
+    component: () => import("./_nuxt/index-B6gZ5-S7.js")
   },
   {
     name: "shop",
     path: "/shop",
-    component: () => import("./_nuxt/shop-DEYG3_NZ.js")
+    meta: __nuxt_page_meta$6 || {},
+    component: () => import("./_nuxt/shop-3ORrtlJH.js")
   },
   {
     name: "deals",
     path: "/deals",
-    component: () => import("./_nuxt/deals-DUwevjpL.js")
-  },
-  {
-    name: "index",
-    path: "/",
-    component: () => import("./_nuxt/index-C5-7sBsV.js")
-  },
-  {
-    name: "search",
-    path: "/search",
-    component: () => import("./_nuxt/search-kgFS1e6O.js")
+    meta: __nuxt_page_meta$5 || {},
+    component: () => import("./_nuxt/deals-D8M-tIH2.js")
   },
   {
     name: "products",
     path: "/products",
-    component: () => import("./_nuxt/products-Cr690IaB.js")
+    meta: __nuxt_page_meta$4 || {},
+    component: () => import("./_nuxt/index-C8wj4X86.js")
+  },
+  {
+    name: "search",
+    path: "/search",
+    meta: __nuxt_page_meta$3 || {},
+    component: () => import("./_nuxt/search-Do-CQJwM.js")
   },
   {
     name: "categories",
     path: "/categories",
-    component: () => import("./_nuxt/categories-BccnhDjq.js")
+    meta: __nuxt_page_meta$2 || {},
+    component: () => import("./_nuxt/index-9IWBGpYk.js")
   },
   {
     name: "best-sellers",
     path: "/best-sellers",
-    component: () => import("./_nuxt/best-sellers-DRTygkLs.js")
+    meta: __nuxt_page_meta$1 || {},
+    component: () => import("./_nuxt/best-sellers-CEuIxWSB.js")
   },
   {
     name: "new-arrivals",
     path: "/new-arrivals",
-    component: () => import("./_nuxt/new-arrivals-CME5orpb.js")
+    meta: __nuxt_page_meta || {},
+    component: () => import("./_nuxt/new-arrivals-DMigX2RR.js")
   }
 ];
 const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
@@ -1059,7 +1075,7 @@ const plugins = [
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import("./_nuxt/default-DJbc5IRU.js").then((m) => m.default || m))
+  default: defineAsyncComponent(() => import("./_nuxt/default-CYzkraLN.js").then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
 const LayoutLoader = defineComponent({
@@ -1357,7 +1373,7 @@ const _sfc_main$1 = {
     const statusText = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-C4ZHqLaY.js"));
+    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-CLbkmgC0.js"));
     const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-ClwSMDgb.js"));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
@@ -1451,8 +1467,8 @@ let entry;
 const entry_default = ((ssrContext) => entry(ssrContext));
 export {
   _export_sfc as _,
-  useState as a,
-  useRuntimeConfig as b,
+  useRuntimeConfig as a,
+  useRoute as b,
   useNuxtApp as c,
   createError as d,
   entry_default as default,
@@ -1463,6 +1479,6 @@ export {
   navigateTo as n,
   resolveRouteObject as r,
   tryUseNuxtApp as t,
-  useRoute as u
+  useState as u
 };
 //# sourceMappingURL=server.mjs.map

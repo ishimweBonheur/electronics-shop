@@ -6,6 +6,8 @@ stops the animation; there is no independent playback.
 
 ```vue
 <script setup lang="ts">
+import { useScrollAnimation } from '~/composables/ui/useScrollAnimation'
+
 const section = ref<HTMLElement | null>(null)
 useScrollAnimation(section, { start: 0, end: 400 })
 </script>

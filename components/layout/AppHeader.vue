@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { headerLinks } from '~/utils/navigation'
+import AppIcon from '~/components/ui/AppIcon.vue'
+import { headerLinks } from '~/utils/layout/navigation'
 
 const route = useRoute()
 

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AppIcon from '~/components/ui/AppIcon.vue'
+import BaseButton from '~/components/ui/BaseButton.vue'
 import { ui } from '~/utils/ui'
 
 const props = defineProps<{ open: boolean }>()

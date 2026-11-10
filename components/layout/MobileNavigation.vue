@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { headerLinks } from '~/utils/navigation'
-import { collections } from '~/utils/collections'
+import AppIcon from '~/components/ui/AppIcon.vue'
+import { headerLinks } from '~/utils/layout/navigation'
+import { collections } from '~/utils/categories/collections'
 
 const props = defineProps<{ open: boolean }>()
 const emit = defineEmits<{ navigate: [] }>()
